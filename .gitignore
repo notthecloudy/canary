@@ -1,0 +1,28 @@
+/target/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.orig
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.user
+
+# Build artifacts
+dist/
+out/
+scratch/
+
+# Fuzz artifacts
+fuzz/corpus/
+fuzz/artifacts/
+fuzz/coverage/
+
+# AI cache (not committed — local advisory cache)
+.canary-cache/
+
+# Test fixture binaries that are auto-generated (don't commit generated ones)
+tests/fixtures/generated/

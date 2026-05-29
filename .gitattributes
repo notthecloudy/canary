@@ -1,0 +1,13 @@
+# Normalize line endings to LF in the repository
+* text=auto eol=lf
+
+# Binary files — no normalization
+*.wasm binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.a binary
+*.lib binary
+*.png binary
+*.jpg binary

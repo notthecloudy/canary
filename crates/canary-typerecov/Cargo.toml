@@ -1,0 +1,12 @@
+[package]
+name = "canary-typerecov"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+canary-ir = { path = "../canary-ir" }
+canary-sdb = { path = "../canary-sdb" }
+canary-analysis = { path = "../canary-analysis" }
+rustc-hash = "1.1"
+indexmap = "2.0"
+gimli = "0.33.0"

@@ -1,0 +1,19 @@
+[package]
+name = "canary-loader"
+description = "Canary binary loader — PE, ELF, and Mach-O parsing"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+indexmap.workspace = true
+canary-ir = { path = "../canary-ir" }
+canary-sdb = { path = "../canary-sdb" }
+goblin.workspace = true
+object.workspace = true
+windows-metadata.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+serde = { workspace = true }
+rustc-hash = { workspace = true }

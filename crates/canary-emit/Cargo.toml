@@ -1,0 +1,17 @@
+[package]
+name = "canary-emit"
+description = "Canary language emitters — C and future language targets"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+canary-ir = { path = "../canary-ir" }
+canary-analysis = { path = "../canary-analysis" }
+canary-loader = { path = "../canary-loader" }
+canary-sdb = { path = "../canary-sdb" }
+thiserror.workspace = true
+indexmap.workspace = true
+rustc-hash = { workspace = true }
+tracing = { workspace = true }

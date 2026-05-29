@@ -1,0 +1,11 @@
+[package]
+name = "canary-arch"
+description = "Canary architecture lifting traits — architecture-agnostic interface"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+canary-ir = { path = "../canary-ir" }
+thiserror.workspace = true

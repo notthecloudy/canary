@@ -1,0 +1,17 @@
+[package]
+name = "canary-analysis"
+description = "Canary analysis passes — CFG, dominators, SSA construction, type inference"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+canary-ir = { path = "../canary-ir" }
+canary-sdb = { path = "../canary-sdb" }
+indexmap.workspace = true
+rustc-hash.workspace = true
+smallvec.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+serde = { workspace = true }

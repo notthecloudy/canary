@@ -1,0 +1,19 @@
+[package]
+name = "canary-arch-x86"
+description = "Canary x86/x64 architecture lifter"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+indexmap.workspace = true
+canary-ir = { path = "../canary-ir" }
+canary-arch = { path = "../canary-arch" }
+capstone.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+canary-analysis = { path = "../canary-analysis" }
+

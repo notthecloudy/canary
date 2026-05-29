@@ -1,0 +1,20 @@
+[package]
+name = "canary-ir"
+description = "Canary IR — node types, LLIL/MLIL/HLIL, SSA, and arena-based graph storage"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+indexmap.workspace = true
+smallvec.workspace = true
+rustc-hash.workspace = true
+serde = { workspace = true, optional = true }
+thiserror.workspace = true
+bumpalo = { version = "3.20.3", features = ["boxed"] }
+canary-sdb = { path = "../canary-sdb" }
+
+[features]
+default = []
+serde = ["dep:serde", "indexmap/serde", "smallvec/serde"]

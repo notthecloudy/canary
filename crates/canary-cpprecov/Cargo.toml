@@ -1,0 +1,18 @@
+[package]
+name = "canary-cpprecov"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+indexmap.workspace = true
+canary-sdb = { path = "../canary-sdb" }
+canary-ir = { path = "../canary-ir" }
+canary-analysis = { path = "../canary-analysis" }
+canary-loader = { path = "../canary-loader" }
+rustc-hash = "1.1"
